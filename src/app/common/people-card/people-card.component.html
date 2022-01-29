@@ -1,0 +1,38 @@
+<div class="card">
+    <h5 class="title">Name : {{person.name}}</h5>
+    <a>Height : {{person.height}}</a>
+    <a>Mass : {{person.mass}}</a>
+    <a>Hair Color : {{person.hair_color}}</a>
+    <a>Skin Color : {{person.skin_color}}</a>
+    <a>Eye Color : {{person.eye_color}}</a>
+    <a>Birth Year : {{person.birth_year}}</a>
+    <a>Gender : {{person.gender}}</a>
+    <a>Home World : {{person.homeworld}}</a>
+    <select>
+        <option value="Films">Films</option>
+        <option *ngFor="let film of person.films" [value]="film">
+            {{film}}
+        </option>
+    </select>
+    <select>
+        <option value="default">Species</option>
+        <option *ngFor="let spec of person.species" [value]="spec">
+            {{spec}}
+        </option>
+    </select>
+    <select>
+        <option value="default">Vehicles</option>
+        <option *ngFor="let vehicle of person.vehicles" [value]="vehicle">
+            {{vehicle}}
+        </option>
+    </select>
+    <select>
+        <option value="default">Starships</option>
+        <option *ngFor="let starship of person.starships" [value]="starship">
+            {{starship}}
+        </option>
+    </select>
+    <a>Date Created : {{person.created}}</a>
+    <a>Date Edited: {{person.edited}}</a>
+    <a>Url: {{person.url}}</a>
+  </div>

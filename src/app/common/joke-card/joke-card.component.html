@@ -1,0 +1,8 @@
+<div class="card">
+    <img [src]="joke.icon_url" alt="Joke" style="width:20%">
+    <h1>{{joke.categories[0]?? " "}} Joke</h1>
+    <p class="title"> {{joke.value}}</p>
+    <p>Date Creted : {{joke.created_at}}</p>
+    <p>Date Updated: {{joke.updated_at}}</p>
+    <li href="#">{{joke.url}}</li>
+  </div>

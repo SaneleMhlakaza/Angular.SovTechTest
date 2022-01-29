@@ -1,14 +1,44 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { CategoriesComponent } from './chuck/categories/categories.component';
+import { PeopleComponent } from './swapi/people/people.component';
+import { SearchComponent } from './search/search.component';
+import { JokeCardComponent } from './common/joke-card/joke-card.component';
+import { NavigationBarComponent } from './common/nav-bar/navigation-bar/navigation-bar.component';
+import { PeopleCardComponent } from './common/people-card/people-card.component';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule,Routes } from '@angular/router';
+import { ChuckjokeComponent } from './chuck/chuckjoke/chuckjoke.component';
 
+const routes: Routes=[
+  {path: 'categories/:category', component:ChuckjokeComponent },
+  {path: 'categories', component:CategoriesComponent },
+  {path: 'people', component:PeopleComponent },
+  {path: 'search/:searchword', component:SearchComponent },
+  {path: 'search', component:SearchComponent },
+  {path:'', redirectTo: '/categories',pathMatch: 'full'}
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoriesComponent,
+    PeopleComponent,
+    SearchComponent,
+    JokeCardComponent,
+    NavigationBarComponent,
+    PeopleCardComponent,
+    ChuckjokeComponent
   ],
   imports: [
-    BrowserModule
+    HttpClientModule,
+    BrowserModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

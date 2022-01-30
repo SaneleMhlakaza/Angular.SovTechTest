@@ -1,29 +1,27 @@
 # Angular.SovTechTest
 
-Hosting Angular.SovTechTest( Angular ) application to windows IIS.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
+## Development server
 
-First, We need to make sure that IIS in enabled and install the following two extension if not already install:
-https://download.visualstudio.microsoft.com/download/pr/ff658e5a-c017-4a63-9ffe-e53865963848/15875eef1f0b8e25974846e4a4518135/dotnet-hosting-3.1.3-win.exe
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-https://www.iis.net/downloads/microsoft/url-rewrite
+## Code scaffolding
 
-we have to download the code from the repository to our localhost. To do that, First we make sure that we have git installed on our machine then we can open a Cli terminal (e.g cmd,powershell, gitbash...) ideally from a folder that is easily accessible , once we have our cli terminal opened, we run the following git command:
-`git clone https://github.com/SaneleMhlakaza/Angular.SovTechTest.git`
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Open the the angular code with Visual Studio Code by running the following from Angular.SovTechTest folder
-Code .
+## Build
 
-We must then run the following on the Angular Visual Studion Code terminal:
-`ng build --base-href /Angular.SovTechTest/ --prod` 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-We must create a folder in our web root called Angular.SovTechTest, like this `C:\Angular.SovTechTest`
+## Running unit tests
 
-copy the contents of your project’s `Angular.SovTechTest\dist\angular.sov-tech-test` folder into our IIS C:\Angular.SovTechTest folder.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Lastly in IIS , We add our Application and call it `Angular.SovTechTest` [Note: it we keep the name of this folder as Angular.SovTechTest for ease of deployement]
-We must then reference the PhysicalPath of the application to `C:\Angular.SovTechTest` folder.
+## Running end-to-end tests
 
-![image](https://user-images.githubusercontent.com/98617432/151704598-ef78b7d6-dd7c-4046-9d26-78f30795a654.png)
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-And that's it! our application is deployed.
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

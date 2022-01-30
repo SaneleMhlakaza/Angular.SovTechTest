@@ -1,0 +1,27 @@
+<div class="list-group">
+    <div *ngFor="let res of search_results.results">
+        <div class="col-md-8" *ngIf="res.resultsApi===search_result_source && res.records.length > 0">
+            <div class="col-md-8">
+                <h5>Search Results from {{res.resultsApi}} : </h5>
+            </div>
+            <div class="col-md-8">
+                <div *ngFor="let record of res.records">
+                    
+                    <app-joke-card  [joke]="record"></app-joke-card>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8" *ngIf="res.resultsApi!=search_result_source && res.records.length > 0">
+            <div class="col-md-8">
+                <h5>Search Results from {{res.resultsApi}} : </h5>
+            </div>
+            <div class="col-md-8">
+                <div *ngFor="let record of res.records">
+                    <app-people-card [person]="record"></app-people-card>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+  </div>

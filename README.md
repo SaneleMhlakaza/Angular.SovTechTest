@@ -8,7 +8,7 @@ https://download.visualstudio.microsoft.com/download/pr/ff658e5a-c017-4a63-9ffe-
 
 https://www.iis.net/downloads/microsoft/url-rewrite
 
-we have to download the code from the repository to our localhost/cloud. To do that, First we make sure that we have git installed on our machine then we can open a Cli terminal (e.g cmd,powershell, gitbash...) ideally from a folder that is easily accessible , once we have our cli terminal opened, we run the following git command:
+we have to download the code from the repository to our localhost. To do that, First we make sure that we have git installed on our machine then we can open a Cli terminal (e.g cmd,powershell, gitbash...) ideally from a folder that is easily accessible , once we have our cli terminal opened, we run the following git command:
 `git clone https://github.com/SaneleMhlakaza/Angular.SovTechTest.git`
 
 Open the the angular code with Visual Studio Code by running the following from Angular.SovTechTest folder

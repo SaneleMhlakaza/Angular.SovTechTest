@@ -28,7 +28,7 @@ In our project in Angular.SovTechTest\src we need to create a web.config file wi
 </configuration>`
 
 We want this to get included with our build so we can deploy it with our Tour of Heroes application. So, let’s add it to the assets in our project’s
-`.angular-cli.json` file like this:
+`.angular.json` file like this:
 
 `"assets": [
     "assets",

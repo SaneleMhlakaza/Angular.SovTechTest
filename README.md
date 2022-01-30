@@ -18,7 +18,7 @@ copy the contents of your project’s `Angular.SovTechTest\dist\angular.sov-tech
 
 Lastly in IIS , We add our Application and call it `Angular.SovTechTest` `[Note: it we keep the name of this folder as Angular.SovTechTest for ease of deployement]` We must then reference the PhysicalPath of the application to `C:\Angular.SovTechTest` folder.
 
-image
+![image](https://user-images.githubusercontent.com/98617432/151709630-046025bb-3f87-4ad2-aefa-1d159e4f809d.png)
 
 And that's it! our application is deployed.
 
